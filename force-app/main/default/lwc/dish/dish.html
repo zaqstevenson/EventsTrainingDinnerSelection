@@ -1,0 +1,9 @@
+<template>
+    <template if:true={dishAvailable}>
+        <div class="slds-p-around_medium lgc-bg" onclick={tileClickHandler}>
+            <lightning-tile label={meetingRoomInfo.roomName} href="WWW.GOOGLE.COM">
+                <p class="slds-truncate" title={dishInfo.origin}>Dish Origin: {dishInfo.origin}</p>
+            </lightning-tile>
+        </div>
+    </template>
+</template>

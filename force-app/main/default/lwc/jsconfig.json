@@ -1,7 +1,20 @@
 {
     "compilerOptions": {
         "baseUrl": ".",
-        "paths": {},
+        "paths": {
+            "c/EventsTrainingDinnerSelection": [
+                "EventsTrainingDinnerSelection/EventsTrainingDinnerSelection.js"
+            ],
+            "c/Dish": [
+                "Dish/Dish.js"
+            ],
+            "c/dish": [
+                "dish/dish.js"
+            ],
+            "c/tableWithDishes": [
+                "tableWithDishes/tableWithDishes.js"
+            ]
+        },
         "experimentalDecorators": true
     },
     "include": [

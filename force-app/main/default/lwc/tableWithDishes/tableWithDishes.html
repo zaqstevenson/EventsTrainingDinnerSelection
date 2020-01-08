@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Table with available dishes">
+        <lightning-layout>
+            <lightning-layout-item size="4" padding="around-small">
+                <ul>
+                    <template for:each={dishesInfo} for:item="dish">
+                        <li key={dish.code} style="padding: 10px">
+                            <c-dish dish-info={dish} show-room-info></c-dish>
+                        </li>
+                    </template>
+                </ul>
+            </lightning-layout-item>
+            <lightning-layout-item size="8" padding="around-small">
+                You have selected {selectedMeetingRoom} with room capacity {selectedMeetingRoomCapacity}
+            </lightning-layout-item>
+        </lightning-layout>
+        
+    </lightning-card>
+</template>
